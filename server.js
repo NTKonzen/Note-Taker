@@ -21,9 +21,21 @@ app.get('/api/notes', (req, res) => {
     return res.json(JSON.parse(fs.readFileSync('db/db.json')))
 })
 app.post('/api/notes', (req, res) => {
-    console.log('Posting new note...')
     let tempDB = JSON.parse(fs.readFileSync('db/db.json'))
+    let id = 1;
+    while
+        (tempDB.some((value, index) => {
+            return value.id === id
+        })) {
+        id++
+    }
+    req.body.id = id;
+    console.log(req.body)
+    // console.log(tempDB.some((value, index) => {
+    //     return value.title === 'Test Title'
+    // }))
     tempDB.push(req.body)
+    console.log('Posting new note...')
     fs.writeFileSync('db/db.json', JSON.stringify(tempDB))
 })
 
