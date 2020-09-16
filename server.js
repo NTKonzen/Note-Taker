@@ -30,12 +30,18 @@ app.post('/api/notes', (req, res) => {
         id++
     }
     req.body.id = id;
-    console.log(req.body)
-    // console.log(tempDB.some((value, index) => {
-    //     return value.title === 'Test Title'
-    // }))
     tempDB.push(req.body)
     console.log('Posting new note...')
+    fs.writeFileSync('db/db.json', JSON.stringify(tempDB))
+})
+app.delete('/api/notes/:id', (req, res) => {
+    let tempDB = JSON.parse(fs.readFileSync('db/db.json'));
+    let id = parseInt(req.params.id);
+    console.log(id)
+    tempDB = tempDB.filter(value => {
+        return value.id !== id
+    });
+    console.log(tempDB)
     fs.writeFileSync('db/db.json', JSON.stringify(tempDB))
 })
 
