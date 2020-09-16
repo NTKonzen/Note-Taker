@@ -103,7 +103,6 @@ const handleRenderSaveBtn = function () {
 
 // Render's the list of note titles
 const renderNoteList = (notes) => {
-  console.log(notes)
   $noteList.empty();
 
   const noteListItems = [];
@@ -142,6 +141,7 @@ const getAndRenderNotes = () => {
 };
 
 $saveNoteBtn.on("click", handleNoteSave);
+$saveNoteBtn.on("click", getAndRenderNotes)
 $noteList.on("click", ".list-group-item", handleNoteView);
 $newNoteBtn.on("click", handleNewNoteView);
 $noteList.on("click", ".delete-note", handleNoteDelete);
