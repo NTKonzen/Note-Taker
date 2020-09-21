@@ -13,10 +13,6 @@
 
 This is an easy-to-use note taker that allows the user to save their notes and view past notes. I built this application to practice my skills in Express.js. Including Express.js, this application was built with Node.js compatibility in mind. 
 
-### Contributors
-
-* [](https://github.com/undefined)
-
 ### Questions
 If you have any questions feel free to contact me on [GitHub](https://github.com/NTKonzen) or email me at nicholaskonzen@gmail.com.
 
