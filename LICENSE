@@ -1,28 +1,3 @@
-# Note Taker
-[![GitHub](https://img.shields.io/github/license/NTKonzen/README-Generator)](#license)
-
-### Table of Contents
-* [Description](#description)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributors](#contributors) 
-* [Questions](#questions)
-* [License](#license)
-
-## Description ##
-
-This is an easy-to-use note taker that allows the user to save their notes and view past notes. I built this application to practice my skills in Express.js. Including Express.js, this application was built with Node.js compatibility in mind. 
-
-### Contributors
-
-* [](https://github.com/undefined)
-
-### Questions
-If you have any questions feel free to contact me on [GitHub](https://github.com/NTKonzen) or email me at nicholaskonzen@gmail.com.
-
----
-#### License
-
 MIT License
 
 Copyright (c) 2020 Nicholas Konzen
