@@ -3,9 +3,6 @@
 
 ### Table of Contents
 * [Description](#description)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributors](#contributors) 
 * [Questions](#questions)
 * [License](#license)
 
